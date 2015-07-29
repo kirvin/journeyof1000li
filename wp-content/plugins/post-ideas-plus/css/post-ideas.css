@@ -1,0 +1,117 @@
+/* Post Ideas Admin Styles ****************************
+	Homepage: http://nooshu.com 
+	Author: Matt Hobbs
+******************************************************/
+
+/* Basic Page Styling ********************************/
+#postIdeasContainer .adminInfo {
+	clear: both;
+	float: left;
+	display: inline;
+	margin-top: 0;
+	}
+#postIdeasContainer h3 {
+	clear: both;
+	float: left;
+	margin: 1.5em 0 1em;
+	}
+#postIdeasContainer .postbox h3 {
+	clear: none;
+	float: none;
+	margin: 0;
+	}
+#postIdeasContainer .postbox-container {width: 520px;}
+#addIdea ul li,
+#piSettings ul li {
+	margin: 0 0 8px;
+	overflow: hidden;
+	}
+#addIdea ul li label,
+#piSettings ul li label {
+	width: 120px;
+	float: left;
+	display: inline;
+	clear: left;
+	padding: 2px 0 0;
+	}
+#piSettings ul li label {
+	width: 142px;
+	padding: 0;
+	}
+#addIdea ul li label small {display: block;}
+#addIdea ul li input,
+#addIdea ul li textarea,
+#piSettings ul li input {
+	float: left;
+	display: inline;
+	}
+#piSettings ul li input {margin: 5px 0 0;}
+#addIdea ul li textarea {
+	float: left;
+	display: inline;
+	width: 370px;
+	}
+#addIdea .inside,
+#piSettings .inside {padding: 16px 10px 10px;}
+#postIdeaOrder {
+	float: left;
+	clear: both;
+	display: inline;
+	overflow: hidden;
+	margin: 0 0 4px;
+	}
+#postIdeaOrder li {
+	float: left;
+	display: inline;
+	border-right: 1px solid #333;
+	padding: 0 8px;
+	line-height: 1.25;
+	}
+#postIdeaOrder li span {font-weight: 700;}
+#postIdeaOrder li.first,
+#postIdeaOrder li.last {border: 0;}
+#postIdeaOrder li.first {padding: 0 8px 0 0;}
+#postResults {margin: 0 0 60px;}
+#postResults tr.admin-idea td,
+#view_post_ideas_widget tr.admin-idea td {background: #d0d9f0;}
+#postResults tr.admin-idea.alternate td,
+#view_post_ideas_widget tr.admin-idea.alternate td {background: #dee7ff;}
+.empty td {
+	font-weight: 700;
+	text-align: center;
+	padding: 8px 0;
+	}
+/* Dashboard *****************************************/
+/* Add Post Idea */
+#add_post_ideas_widget .lbl {width: 126px;}
+#add_post_ideas_widget .inside {overflow: hidden;}
+#add_post_ideas_widget label {
+	display: block;
+	padding: 2px 0 0;
+	}
+#add_post_ideas_widget small,
+#piSettings small {display: block;}
+#add_post_ideas_widget table {width: 100%;}
+#add_post_ideas_widget table td {
+	vertical-align: top;
+	padding-bottom: 1em;
+	}
+#add_post_ideas_widget table input,
+#add_post_ideas_widget table textarea {
+	width: 99%;
+	border: none;
+	}
+#add_post_ideas_widget table textarea {height: 3em;}
+#add_post_ideas_widget #pip_addIdeaPriority {width: 40px;}
+#addIdeaSubmit {
+	float: right;
+	display: inline;
+	}
+#add_post_ideas_widget .priority-wrap {width: 40px;}
+#add_post_ideas_widget #pAll {
+	margin: 0 0 0 120px;
+	float: left;
+	display: inline;
+	}
+/* List Post Idea */
+#view_post_ideas_widget td {line-height: 1.3;}
