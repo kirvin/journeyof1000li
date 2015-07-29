@@ -1,0 +1,14 @@
+/* CSS Document */
+
+
+div.left > div.cols01, #topbar, #related, #mainpic, form, .comments, .pageNav {display: none;}
+html {display: block; width: 80%;}
+* {color: #333; font-family: Arial, Helvetica, sans-serif;}
+* a {color: #000099;}
+#header {border-bottom: 2px solid #888; margin-bottom: 2em;}
+#footer {border-top: 2px solid #888; margin-top: 2em;}
+.entry {border-bottom: 1px solid #ccc;}
+.entry img {float: left; margin: 0 20px 20px 0;}
+.date, .date span {margin-bottom: 0;}
+blockquote {padding-left: 10px; border-left: 5px solid #ccc; margin-left: 0;}
+code {font-family: "Courier New", Courier, mono; color: #006600;}

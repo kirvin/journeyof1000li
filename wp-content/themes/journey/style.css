@@ -1,0 +1,557 @@
+/*  
+Theme Name: Journey of 1000 Li
+Theme URI: http://www.journeyof1000li.com
+Description: Travelogue theme
+Version: 1.0
+Author: Kelly Irvin
+Author URI: http://www.???
+*/
+
+/******************************************************
+ *
+ * Default styles
+ *
+ ******************************************************/
+* {
+	font-size: 100%;
+	margin: 0;
+	padding: 0;
+	line-height: 1.4em;
+}
+body {
+	background-color: #cad0aa;
+	color: #7c746c;
+	font-size: 13px;
+	font-family: Trebuchet MS, Arial, Helvetica, sans-serif;
+}
+a img {
+	border: 0px;
+}
+
+/******************************************************
+ *
+ * Layout styles
+ *
+ ******************************************************/
+#mainContainer {
+	width: 1000px;
+	margin: auto;
+	background-color: #ffffff;
+	padding-bottom: 15px;
+}
+#headerContainer, #contentContainer {
+	width: 900px;
+	margin: auto;
+	padding-top: 20px;
+}
+#headerContainer {
+}
+#headerContainer img {
+	width: 900px;
+	height: 69px;
+}
+#primaryNav {
+	height: 32px;
+}
+#primaryNav ul {
+	list-style: none;
+}
+#primaryNav ul li.first {
+	margin-left: 0px;
+}
+#primaryNav ul li {
+	float: left;
+	padding: 5px;
+	background-color: #7c736c;
+	color: #ffffff;
+	font-size: 11px;
+	font-weight: normal;
+	margin-left: 8px;
+	letter-spacing: 2px;
+	width: 95px;
+	text-align: center;
+}
+#primaryNav ul li.active {
+	background-color: #bdc59d;
+}
+#primaryNav li a {
+	color: #ffffff;
+	text-decoration: none;
+}
+.left-column {
+	width: 525px;
+}
+.right-column {
+	width: 360px;
+	padding-left: 10px;
+}
+.single-column {
+	width: 900px;
+}
+.left-container {
+}
+.sidebar {
+}
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+.clear {
+	clear: both;
+}
+.journal-nav {
+	text-align: center;
+	background-color: #e4e4e4;
+	color: #333333;
+	padding: 5px;
+}
+.journal-nav a:hover, .journal-nav a:active, .journal-nav a:link, .journal-nav a:focus, .journal-nav a:visited {
+	color: #333333;
+}
+.alignleft, div.alignleft img {
+	float: left;
+	margin-right: 10px;
+}
+
+/******************************************************
+ *
+ * Text styles
+ *
+ ******************************************************/
+.emphasis {
+	font-weight: bold;
+}
+a:ACTIVE, a:focus, a:hover, a:LINK, a:visited {
+	color: #fa8005;
+}
+.input-hint { color: #999999; }
+#contentContainer h1 {
+	font-size: 16px;
+	font-weight: bold;
+	margin-bottom: 15px;
+	padding-left: 10px;
+}
+#contentContainer.photoContent h1 {
+	padding-left: 0px;
+}
+
+/******************************************************
+ *
+ * Widget styles
+ *
+ ******************************************************/
+.widget-container h3 {
+        background-color: #7c736c;
+        color: #ffffff;
+        letter-spacing: 2px;
+        padding: 5px;
+}
+#twitterFollowLink {
+	float: right;
+	margin-top: -24px;
+	text-decoration: none;
+	color: #ffffff;
+}
+ol.tweets {
+	list-style: none;
+}
+ol.tweets li {
+	padding-top: 15px;
+	font-size: 10px;
+}
+.tweets .avatar {
+	float: left;
+	margin-right: 5px;
+}
+.journey-widget {
+	margin-bottom: 15px;
+}
+.blog-intro-widget {
+	width: 545px;
+	background-color: #ffffff;
+	padding: 0px;
+}
+.blog-intro-widget .splash-image {
+	width: 535px;
+	height: 246px;
+	border: 5px solid #b3c69e;
+	margin: auto;
+}
+.blog-intro-widget p {
+	float: left;
+	width: 545px;
+	padding: 10px 0px;
+}
+.blog-intro-widget .right {
+	float: right;
+	padding-right: 5px;
+}
+.blog-intro-widget .highlight, .faq .highlight {
+	font-weight: bold;
+	color: #ff6600;
+}
+.blog-intro-widget .footnote {
+	font-size: 9px;
+	font-style: italic;
+}
+.gmap {
+	float: right;
+	overflow: hidden;
+}
+#followWidget {
+	margin-bottom: 15px;
+}
+#followWidget .tabs {
+	margin: 0px;
+	list-style: none;
+	padding: 0px;
+}
+#followWidget .tabs li {
+	margin-right: 5px;
+	padding: 4px;
+	background-color: #979e58;
+	color: #ffffff;
+	float: right;
+	border: 1px solid #e8e9d9;
+	border-bottom: none;
+	cursor: pointer;
+}
+#followWidget .tabs li.widget-header {
+	background-color: #ffffff;
+	color: #222222;
+	border-style: none;
+	font-size: 13px;
+	padding: 3px;
+	width: 120px;
+	cursor: default;
+	float: left;
+}
+#followWidget .tabs li.activeTab {
+	background-color: #e8e9d9;
+	color: #979e58;
+}
+#followWidget .content {
+	height: 60px;
+	background-color: #ffffff;
+	padding: 8px;
+	border: 2px solid #e8e9d9;
+}
+.inactive-content {
+	display: none;
+}
+#followWidget .subscribe-form-container p {
+	display: inline;
+}
+#followWidget .subscribe-form-container .subscribe-text-input {
+	width: 170px;
+	float: left;
+}
+#followWidget .subscribe-form-container .subscribe-button {
+	float: left;
+	margin-left: 5px;
+}
+#routeWidget h3 {
+	background-color: #7c736c;
+	color: #ffffff;
+	letter-spacing: 2px;
+	padding: 5px;
+}
+#routeWidget h3 a {
+	text-decoration: none;
+	font-size: 11px;
+	color: #ffffff;
+}
+
+.flickr-photos {
+	margin-top: 15px;
+}
+.flickr-photos h3 {
+	padding: 4px;
+	background-color: #6a605a;
+	margin-bottom: 3px;
+	color: #ffffff;
+	font-size: 14px;
+}
+.flickr-photos h3 a {
+	font-size: 12px;
+	font-weight: normal;
+	color: #ffffff;
+	text-decoration: none;
+}
+.flickr-photos img {
+	margin-top: 5px;
+	margin-right: 5px;
+	height: 78px;
+	width: 78px;
+}
+.posts-archive-widget {
+	margin-top: 15px;
+	background-color: #e0e6ca;
+}
+.posts-archive-widget .inner {
+	padding: 10px;
+}
+.posts-archive-widget h3 {
+	padding: 4px;
+	background-color: #6a605a;
+	margin-bottom: 3px;
+	color: #ffffff;
+	font-size: 14px;
+}
+.posts-archive-widget .recent-posts {
+	list-style: disc outside none;
+	margin: 0px;
+	padding: 0px;
+	margin-bottom: 10px;
+	padding-left: 10px;
+}
+.posts-archive-widget a {
+	color: #6a605a;
+}
+#calendar_wrap #wp-calendar {
+	margin: auto;
+}
+
+
+/******************************************************
+ *
+ * Post styles
+ *
+ ******************************************************/
+.post-entry {
+	border-top: 1px solid #fa8005;
+	margin-top: 12px;
+	width: 525px;
+	padding: 10px;
+}
+.single-column .post-entry {
+	width: 100%;
+}
+.post-entry .date {
+	float: right;
+	padding-left: 5px;
+	width: 6.3em;
+	height: 5.9em;
+	color: #a7a77c;
+}
+.trip-day-number {
+	font-size: 16px;
+	font-weight: normal;
+}
+.post-date {
+	font-size: 13px;
+}
+.post-year {
+	font-size: 11px;
+}
+.post-entry .avatar {
+	float: left;
+}
+.post-entry h2 {
+	margin: 0px;
+	margin-left: 65px;
+}
+.post-entry h2 a {
+	color: #554b42;
+	font-size: 16px;
+}
+#contentContainer .single-post-content .post-entry h1 {
+	padding-left: 65px;
+}
+.single-post-content .post-entry h2 {
+	margin-left: 0px;
+}
+.post-category  {
+	margin-left: 65px;
+}
+.post-content {
+	margin-top: 32px;
+	margin-left: 65px;
+}
+.post-content ol, .post-content ul {
+	margin: 10px;
+	list-style-position: outside;
+	margin-left: 20px;
+}
+.post-content ol {
+	list-style-type: decimal;
+}
+.post-content ul {
+	list-style-type: disc;
+}
+.post-content li {
+}
+.comments-form {
+	margin-top: 30px;
+}
+.comments-form p {
+	margin-top: 10px;
+}
+.comments-form h3 {
+	font-size: 16px;
+        background-color: #E4E4E4;
+        padding: 3px;
+        margin-bottom: 15px;
+}
+.aComment {
+        border: 1px solid #E4E4E4;
+        margin-bottom: 15px;
+        padding: 10px;
+}
+.single-post-content .post-entry {
+	border-top: none;
+}
+.post-content h2 {
+	margin-bottom: 15px;
+	font-size: 16px;
+	font-weight: bold;
+}
+.post-content img.left {
+	float: left;
+	margin-right: 10px;
+}
+.post-content p {
+	margin-bottom: 20px;
+}
+.archive-entry {
+	padding: 10px;
+	margin-bottom: 20px;
+}
+.archive-entry .date {
+	font-weight: bold;
+}
+.archive-entry h3 {
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+.aligncenter {
+        margin: auto;
+}
+.wp-caption {
+        border-color: #111111;
+        background-color: #dddddd;
+        font-style: italic;
+        text-align: center;
+}
+
+/******************************************************
+ *
+ * Photo album styles
+ *
+ ******************************************************/
+#contentContainer.photoContent {
+	padding-top: 10px;
+}
+#highlight h2 {
+	color: #FA8005;
+	font-size: 14px;
+	margin: 10px 10px 0 0;
+}
+#highlight h1 {
+	margin-bottom: 10px;
+}
+#highlight h1 a {
+	color: #554b42;
+	font-size: 17px;
+}
+.photo-divider {
+	margin-top: 15px;
+	border-top: 1px solid #FA8005;
+}
+.tt-older-posts h4 {
+	color: #fa8005;
+	margin-bottom: 10px;
+	font-size: 14px;
+}
+.photos-splash-image {
+	width: 550px;
+}
+.photo-album h2, h2.photo-title {
+	color: #554b42;
+	font-size: 20px;
+}
+.photo-album #highlight {
+}
+.photo-album #highlight .left-column {
+	width: 280px;
+}
+.photo-album #highlight .right-column {
+	width: 598px;
+}
+.photo-album #highlight .left-column .tt-flickr img {
+	border-width: 20px;
+	border-color: #f2f2f2;
+	border-style: solid;
+}
+.photo-album #highlight p {
+	font-size: 12px;
+	padding: 20px;
+}
+.photo-album #highlight #photos {
+	padding: 0px;
+	margin: 0px;
+}
+.photo-album #highlight #photos img {
+	margin: 0 0 5px 5px;
+}
+.photo-album #highlight .meta {
+	font-size: 12px;
+}
+.photo-album #highlight .meta a {
+	color: #fa8005;
+}
+#photo-album-context {
+	margin-top: 10px;
+}
+#photo-album-context .prev {
+	float: left;
+}
+#photo-album-context .next {
+	float: right;
+}
+.single-photo-container .photo-description {
+	margin: 10px 0 10px 0;
+	font-size: 14px;
+}
+.single-photo-container h4 {
+	font-weight: bold;
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+
+/******************************************************
+ *
+ * Page styles
+ *
+ ******************************************************/
+.page-content {
+	width: 525px;
+	padding: 10px;
+}
+.page-content .post-content {
+	margin: 0px;
+}
+
+
+/******************************************************
+ *
+ * Route styles
+ *
+ ******************************************************/
+#routeLinksContainer {
+	float: left;
+	width: 200px;
+	text-align: left;
+}
+#routeMap {
+	float: right;
+	border: 1px solid #7c736c;
+}
+.route-list {
+	list-style: none;
+}
+.route-list li {
+	margin-bottom: 10px;
+}

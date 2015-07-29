@@ -1,0 +1,73 @@
+/* CSS Document */
+
+
+/* COLOUR SCHEME 
+____________________________________________________________________________
+this resets the colour scheme to the default scheme.
+*/
+
+body {color: #76766a;}
+#container, #nav li ul li {background-color: #f4f4e0;}
+#topbar {background-color: #333;}
+#footer {background-color: #333;}
+#mainpicinner {border: 1px solid #fff;}
+/* typography */
+#logo a {color: #3a3e3e;}
+.textbkg {border-left: 4px solid #fff;}
+.textbkg span {background: #fff; outline: solid 2px #fff; -moz-outline: solid 2px #fff;}
+h2 {color: #3a3e3e;}
+.entry h2 a {color: #3a3e3e;}
+h3 {color: #3a3e3e;}
+p {}
+.date {background: #3a709c;}
+.dateDay {color: #fff;}
+.dateMonth {color: #f4f4e0;}
+.dateYear {color: #f4f4e0;}
+#topbar p, #footer p {color: #76766a;}
+blockquote {border-left: 10px solid #c0c0b1; background: #ededda; }
+code {color: #006600;}
+/* links */
+a {color: #3a709c;}
+#topbar a, #footer a {color: #3a709c;}
+/* modules and widgets */
+#wp-calendar td {background: #ededda;}
+#flickr a {border: 4px solid #c0c0b1; background: #fff;}
+#flickr a:hover {border-color: #959586;}
+/* forms */
+#topbar .field, #topbar .openid_url_sidebar {background: #4f4f4c !important; color: #fff !important; border: none !important;}
+
+
+/* IE6 STYLES
+____________________________________________________________________________
+*/
+
+#topbar {background-image: url(images/topbar.gif); text-align: center;}
+#header {background-image: url(images/header.gif); text-align: center;}
+#content { text-align: center;}
+#related {background: #e9e9da; border-top: 1px solid #d5d2d3; border-bottom: 1px solid #f4f4e0; text-align: center;}
+#footer {background-image: url(images/footer.gif); background-position: bottom; text-align: center;}
+
+.box01 {text-align: left;}
+#mainpicinner  {width: expression(document.body.clientWidth < 900? "560px" : document.body.clientWidth > 900? "860px" : "auto");}
+
+#mainpic {background: #d5d2d3;}
+#searchsubmit {position: relative; top: -3px;}
+#topbar .cols01 {position: relative;}
+
+#commentform p label {position: static;}
+
+.cols01 ul, .cols02 ul {margin: 0 0 24px 16px;}
+.cols01 ol, .cols02 ol {margin: 0 0 24px 23px;}
+.cols01 ul ul, .cols02 ul ul, .cols01 ol ul, .cols02 ol ul {margin: 0 0 0 16px;}
+.cols01 ol ol, .cols02 ol ol, .cols01 ul ol, .cols02 ul ol {margin: 0 0 0 23px;}
+
+.pagePrev {background: url(images/prev.gif) 50% 50% no-repeat;}
+.pageNext {background: url(images/next.gif) 50% 50% no-repeat;}
+
+
+
+
+
+
+
+

@@ -1,0 +1,87 @@
+/*
+Replace the top section of style.css with one of these chunks to change the colour scheme... of course, these are just to get you started, you can always design your own too.
+*/
+
+
+/* GREEN TONES
+____________________________________________________________________________
+*/
+
+body {color: #3a4032;}
+#container, #nav li ul li {background-color: #dce7a2;}
+#topbar {background-color: #4b7c44;}
+#footer {background-color: #4b7c44;}
+#mainpicinner {height: 250px; background: url(images/mainpic.jpg) top left no-repeat #fff; border: 1px solid #fff;}
+/* typography */
+#logo a {color: #3a4032;}
+.textbkg {border-left: 4px solid #ebf0cf;}
+.textbkg span {background: #ebf0cf; outline: solid 2px #ebf0cf; -moz-outline: solid 2px #ebf0cf;}
+h2 {color: #3a4032;}
+.entry h2 a {color: #3a4032;}
+h3 {color: #3a4032;}
+p {}
+.date {background: #4b7c44;}
+.dateDay {color: #fff;}
+.dateMonth {color: #ebf0cf;}
+.dateYear {color: #ebf0cf;}
+#topbar p, #footer p {color: #92a781;}
+blockquote {border-left: 10px solid #b0b984; background: #cfdd85; }
+code {color: #003399;}
+/* links */
+a {color: #18700a;}
+#topbar a, #footer a {color: #ebf0cf;}
+/* modules and widgets */
+#wp-calendar td {background: #cfdd85;}
+#flickr a {border: 4px solid #b0b984; background: #fff;}
+#flickr a:hover {border-color: #3a4032;}
+/* forms */
+#topbar .field, #topbar .openid_url_sidebar {background: #2d4a28 !important; color: #fff!important; border: none !important;}
+/* buttons */
+.comments a {background: url(images/comments_left.png) top left no-repeat; color: #3a3e3e;}
+.comments span {background: url(images/comments_right.png) top right no-repeat;}
+/* Nav */
+#nav > li:hover {background: #cfdd85;}
+#nav li ul li a {background: #cfdd85; color: #3a4032;}
+#nav li ul li a:hover {border-left: 3px solid #18700a; color: #18700a;}
+
+/* NEUTRAL TONES 
+____________________________________________________________________________
+*/
+
+
+body {color: #76766a;}
+#container, #nav li ul li {background-color: #f4f4e0;}
+#topbar {background-color: #333;}
+#footer {background-color: #333;}
+#mainpicinner {height: 250px; background: url(images/mainpic.jpg) top left no-repeat #fff; border: 1px solid #fff;}
+/* typography */
+#logo a {color: #3a3e3e;}
+.textbkg {border-left: 4px solid #fff;}
+.textbkg span {background: #fff; outline: solid 2px #fff; -moz-outline: solid 2px #fff;}
+h2 {color: #3a3e3e;}
+.entry h2 a {color: #3a3e3e;}
+h3 {color: #3a3e3e;}
+p {}
+.date {background: #3a709c;}
+.dateDay {color: #fff;}
+.dateMonth {color: #f4f4e0;}
+.dateYear {color: #f4f4e0;}
+#topbar p, #footer p {color: #76766a;}
+blockquote {border-left: 10px solid #c0c0b1; background: #ededda; }
+code {color: #006600;}
+/* links */
+a {color: #3a709c;}
+#topbar a, #footer a {color: #3a709c;}
+/* modules and widgets */
+#wp-calendar td {background: #ededda;}
+#flickr a {border: 4px solid #c0c0b1; background: #fff;}
+#flickr a:hover {border-color: #959586;}
+/* forms */
+#topbar .field, #topbar .openid_url_sidebar {background: #4f4f4c !important; color: #fff !important; border: none !important;}
+/* buttons */
+.comments a {background: url(images/comments_left.png) top left no-repeat; color: #3a3e3e;}
+.comments span {background: url(images/comments_right.png) top right no-repeat;}
+/* Nav */
+#nav > li:hover {background: #dcdcce;}
+#nav li ul li a {background: #dcdcce; color: #68685f;}
+#nav li ul li a:hover {border-left: 3px solid #3a709c; color: #3a709c;}
