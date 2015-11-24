@@ -1,46 +1,60 @@
 <?php
-        display_header($customVars["mainNav"][0]);
-	while (have_posts()) {
-		the_post();
-		$customVars = get_post_custom();
-	}
+	display_header("journal");
 ?>
 
 <div id="contentContainer">
 	<table border="0" cellpadding="0" cellspacing="0">
 		<tr>
 			<td valign="top" class="left-column">
-				<div class="left-container">
-					<?php if (have_posts()) { ?>
-					<?php 	while (have_posts()) { ?>
-					<?php 		the_post() ?>
-									<h1><?php the_title(); ?></h1>
-									<div class="page-content">
-										<div class="post-content">
-											<?php
-												the_content();
-											?>
-										</div>
-										<br class="clear" />
-									</div>
-					<?php 	} ?>
-							<div class="pageNav">
-							    <?php posts_nav_link('', '<strong class="pageNext"><span>Next</span></strong>', '<strong class="pagePrev"><span>Previous</span></strong>'); ?>
-							</div>
-					<?php } else { ?>
-							Looking for something?  Try searching our site--if you can't find what you were looking for, <a href="/contact">drop us a line</a>.
-							<?php include (TEMPLATEPATH . "/searchform.php"); ?>
-					<?php }?>
+				<div class="left-container single-post-content">
+					<div class="journal-nav">
+						<span class="left">
+							<?php previous_post('&lt;&lt;&nbsp;%', 'Previous Post', 'no')?>
+						</span>
+						<span class="middle">
+							<a href="/journal">Journal Home</a>
+						</span>
+						<span class="right">
+							<?php next_post('%&nbsp;&gt;&gt;', 'Next Post', 'no')?>
+						</span>
+					</div>
+				<?php
+					posts_nav_link(' &#8212; ', __('&laquo; Newer Posts'), __('Older Posts &raquo;'));
+					if (have_posts()) {
+						while (have_posts()) {
+							the_post();
+							echo get_post_layout ($post, $tripStart, true, true, false);
+						}
+				?>
+					<div class="journal-nav">
+						<span class="left">
+							<?php previous_post('&lt;&lt;&nbsp;%', 'Previous Post', 'no')?>
+						</span>
+						<span class="middle">
+							<a href="/journal">Journal Home</a>
+						</span>
+						<span class="right">
+							<?php next_post('%&nbsp;&gt;&gt;', 'Next Post', 'no')?>
+						</span>
+					</div>
+				<?php
+					} else {
+				?>
+						Looking for something?  Try searching our site--if you can't find what you were looking for, <a href="/contact">drop us a line</a>.
+						<?php include (TEMPLATEPATH . "/searchform.php"); ?>
+				<?php
+					}
+				?>
 				</div>
 			</td>
-			<td class="right-column" valign="top">
+      <td class="right-column" valign="top">
 				<div class="sidebar">
 					<?php
 						// FIXME this needs to be a plugin
 						follow_widget();
 						get_sidebar();
 					?>
-				</div>			
+				</div>
 			</td>
 		</tr>
 	</table>
